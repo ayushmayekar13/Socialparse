@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Profile Info</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Instagram Profile Info</h1>
+        <form id="profile-form">
+            <label for="profile_name">Instagram Username:</label>
+            <input type="text" id="profile_name" name="profile_name" required>
+            <button type="submit">Get Info</button>
+        </form>
+        <div id="profile-info"></div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

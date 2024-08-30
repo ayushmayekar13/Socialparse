@@ -14,7 +14,7 @@ def download_instagram_data(username, password, profile_name):
     try:
         print(f"Attempting to download profile: {profile_name}")
         # Download profile data
-        L.download_profile(profile_name, profile_pic=True, posts=True)
+        L.download_profile(profile_name, profile_pic=True)
         print(f"Profile {profile_name} downloaded successfully.")
     except instaloader.exceptions.ProfileNotExistsException:
         print("The profile does not exist or the URL is incorrect.")
@@ -22,8 +22,8 @@ def download_instagram_data(username, password, profile_name):
         print(f"An error occurred: {e}")
 
 if __name__ == "__main__":
-    insta_username = "your_instagram_username"  # Replace with your Instagram username
-    insta_password = "your_instagram_password"  # Replace with your Instagram password
-    target_profile = "target_profile_name"       # Replace with the profile to download
+    insta_username = "gaurigawadekph"  # Replace with your Instagram username
+    insta_password = "PowerOff0%"  # Replace with your Instagram password
+    target_profile = "ayush_mayekar_"       # Replace with the profile to download
 
     download_instagram_data(insta_username, insta_password, target_profile)

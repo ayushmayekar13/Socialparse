@@ -22,8 +22,8 @@ def download_instagram_data(username, password, profile_name):
         print(f"An error occurred: {e}")
 
 if __name__ == "__main__":
-    insta_username = "gaurigawadekph"  # Replace with your Instagram username
-    insta_password = "PowerOff0%"  # Replace with your Instagram password
+    insta_username = "******"  # Replace with your Instagram username
+    insta_password = "******"  # Replace with your Instagram password
     target_profile = "ayush_mayekar_"       # Replace with the profile to download
 
     download_instagram_data(insta_username, insta_password, target_profile)
